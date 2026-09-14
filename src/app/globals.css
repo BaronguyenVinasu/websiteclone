@@ -1,4 +1,15 @@
 @import "tailwindcss";
+
+/* Giang Bui portfolio design tokens */
+:root {
+  --gb-peach: rgb(250, 217, 180);         /* #FAD9B4 */
+  --gb-blue: rgb(199, 222, 255);           /* #C7DEFF */
+  --gb-yellow-green: rgb(229, 236, 152);   /* #E5EC98 */
+  --gb-coral: rgb(234, 142, 112);          /* hero card background */
+  --gb-rust: rgb(211, 110, 99);            /* accent text */
+  --gb-navy: rgb(48, 66, 84);              /* nav link color */
+  --gb-nav-bg: rgb(253, 253, 253);         /* nav background */
+}
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
