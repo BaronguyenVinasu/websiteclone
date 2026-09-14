@@ -1,0 +1,117 @@
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+
+const IMAGE_BASE =
+  "/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/";
+
+interface CertItemProps {
+  number: string;
+  title: string;
+  bullets: string[];
+}
+
+function CertItem({ number, title, bullets }: CertItemProps) {
+  return (
+    <div className="mb-8 last:mb-0">
+      <div
+        className="font-normal text-black"
+        style={{ fontFamily: "var(--font-playfair)", fontSize: "48px" }}
+      >
+        {number}
+      </div>
+      <div
+        className="font-normal text-black mb-3"
+        style={{ fontFamily: "var(--font-playfair)", fontSize: "20px" }}
+      >
+        {title}
+      </div>
+      <ul className="space-y-1">
+        {bullets.map((bullet, index) => (
+          <li
+            key={index}
+            className="text-sm font-bold text-black"
+            style={{ fontFamily: "var(--font-noto)" }}
+          >
+            • {bullet}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export function CertificationsSection() {
+  const certificationBullets = [
+    "L&D Business Partner",
+    "Learning Activities Design",
+    "Adult Learning Theory, etc...",
+  ];
+
+  const recognitionBullets = [
+    "Shining star of 2023 (Rookie award)",
+    "Excellent Star 2024",
+  ];
+
+  return (
+    <section
+      id="certifications"
+      className="min-h-screen px-12 py-16"
+      style={{
+        background: "linear-gradient(135deg, #e5ec98 0%, #f0f5c0 100%)",
+      }}
+    >
+      <h2
+        className={cn("font-normal text-black mb-8 whitespace-pre-line")}
+        style={{
+          fontFamily: "var(--font-playfair)",
+          fontSize: "clamp(40px, 7vw, 100px)",
+          lineHeight: "0.9",
+        }}
+      >
+        {"Certifications &\nRecognitions"}
+      </h2>
+
+      <div className="flex gap-12 mt-6">
+        {/* Left card */}
+        <div className="bg-white rounded-3xl p-10 shadow-sm" style={{ width: "40%" }}>
+          <CertItem
+            number="01"
+            title="Certification"
+            bullets={certificationBullets}
+          />
+          <CertItem
+            number="02"
+            title="Recognition"
+            bullets={recognitionBullets}
+          />
+        </div>
+
+        {/* Right overlapping images */}
+        <div className="flex-1 relative min-h-[400px]">
+          <Image
+            src={`${IMAGE_BASE}875630dfd8cee5a8052f3e974bcc7f12.png`}
+            alt="Certification document"
+            width={600}
+            height={450}
+            className={cn(
+              "absolute rounded-lg shadow-xl object-cover",
+              "-rotate-[5deg]"
+            )}
+            style={{ top: "32px", left: 0, width: "70%" }}
+          />
+          <Image
+            src={`${IMAGE_BASE}fd0697800d55617d63cfff99189564e4.jpg`}
+            alt="Recognition certificate"
+            width={500}
+            height={375}
+            className={cn(
+              "absolute rounded-lg shadow-lg object-cover",
+              "rotate-[3deg]"
+            )}
+            style={{ top: "64px", right: 0, width: "60%" }}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
