@@ -22,16 +22,11 @@ export function HeroSection() {
       {/* Hero card */}
       <div
         className="relative mx-[45px] rounded-3xl overflow-hidden"
-        style={{ height: "671px" }}
+        style={{
+          height: "671px",
+          background: "linear-gradient(135deg, #e8a07a 0%, #d97b56 40%, #c96040 100%)",
+        }}
       >
-        {/* Background image (coral gradient + shapes) */}
-        <Image
-          src="/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/6425b363f6cb75c818126dae0a4a4477.png"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-        />
 
         {/* Text overlay — bottom-left */}
         <div className="absolute bottom-12 left-12 z-10">
