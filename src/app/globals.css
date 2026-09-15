@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+/* ─── Scroll-triggered animation system ─────────────────────────────────── */
+[data-animate] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.33, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+[data-animate="fade-up"]    { transform: translateY(36px); }
+[data-animate="fade-left"]  { transform: translateX(-40px); }
+[data-animate="fade-right"] { transform: translateX(40px); }
+[data-animate="scale-in"]   { transform: scale(0.85); }
+[data-animate="fade-in"]    { }
+
+[data-animate].in-view {
+  opacity: 1;
+  transform: none;
+}
+
 /* Giang Bui portfolio design tokens */
 :root {
   --gb-peach: rgb(250, 217, 180);         /* #FAD9B4 */

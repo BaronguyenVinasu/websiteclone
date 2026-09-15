@@ -1,4 +1,6 @@
+"use client";
 import { cn } from "@/lib/utils";
+import { AnimateIn } from "@/components/AnimateIn";
 
 const PROJECTS = [
   { title: "Soft skill training series", sub: "for Fresher" },
@@ -16,22 +18,15 @@ export function KeyProjectsSection() {
     >
       {/* Faded heading + See more */}
       <div className="flex justify-between items-start">
-        <h2
-          className={cn(
-            "font-[family-name:var(--font-playfair)] font-normal leading-none"
-          )}
-          style={{
-            fontSize: "clamp(60px, 10vw, 160px)",
-            color: "rgba(0,0,0,0.12)",
-            letterSpacing: "-2px",
-          }}
-        >
-          Key Projects
-        </h2>
-        <a
-          href="#"
-          className="font-[family-name:var(--font-noto)] text-sm underline text-black mt-4"
-        >
+        <AnimateIn type="fade-in" delay={0}>
+          <h2
+            className={cn("font-[family-name:var(--font-playfair)] font-normal leading-none")}
+            style={{ fontSize: "clamp(60px, 10vw, 160px)", color: "rgba(0,0,0,0.12)", letterSpacing: "-2px" }}
+          >
+            Key Projects
+          </h2>
+        </AnimateIn>
+        <a href="#" className="font-[family-name:var(--font-noto)] text-sm underline text-black mt-4">
           See more
         </a>
       </div>
@@ -39,7 +34,7 @@ export function KeyProjectsSection() {
       {/* Timeline */}
       <div className="flex mt-auto pb-16 gap-0">
         {PROJECTS.map((project, i) => (
-          <div key={i} className="flex-1 pr-4">
+          <AnimateIn key={i} type="fade-up" delay={200 + i * 150} className="flex-1 pr-4">
             <div className="flex items-center">
               <div className="w-4 h-4 rounded-full bg-black shrink-0" />
               <div className="flex-1 h-px bg-black ml-2" />
@@ -50,7 +45,7 @@ export function KeyProjectsSection() {
             <p className="font-[family-name:var(--font-noto)] text-sm text-gray-600 mt-1">
               {project.sub}
             </p>
-          </div>
+          </AnimateIn>
         ))}
       </div>
     </section>

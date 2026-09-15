@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { AnimateIn } from "@/components/AnimateIn";
 
 const IMAGE_BASE =
   "/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/";
@@ -27,16 +29,18 @@ export function OtherActivitiesSection() {
     >
       {/* Header row */}
       <div className="flex justify-between items-baseline mb-10">
-        <h2
-          className="font-normal leading-none"
-          style={{
-            fontFamily: "var(--font-playfair)",
-            fontSize: "clamp(50px, 10vw, 140px)",
-            color: "rgba(0, 0, 0, 0.15)",
-          }}
-        >
-          Other activities
-        </h2>
+        <AnimateIn type="fade-in" delay={0}>
+          <h2
+            className="font-normal leading-none"
+            style={{
+              fontFamily: "var(--font-playfair)",
+              fontSize: "clamp(50px, 10vw, 140px)",
+              color: "rgba(0, 0, 0, 0.15)",
+            }}
+          >
+            Other activities
+          </h2>
+        </AnimateIn>
         <button
           className="text-sm underline text-black bg-transparent border-none cursor-pointer"
           style={{ fontFamily: "var(--font-noto)" }}
@@ -48,10 +52,7 @@ export function OtherActivitiesSection() {
       {/* 3-column photo grid */}
       <div className="grid grid-cols-3 gap-6">
         {photos.map((photo, index) => (
-          <div
-            key={index}
-            className="rounded-2xl overflow-hidden aspect-video"
-          >
+          <AnimateIn key={index} type="scale-in" delay={200 + index * 150} className="rounded-2xl overflow-hidden aspect-video">
             <Image
               src={photo.src}
               alt={photo.alt}
@@ -59,7 +60,7 @@ export function OtherActivitiesSection() {
               height={338}
               className="w-full h-full object-cover"
             />
-          </div>
+          </AnimateIn>
         ))}
       </div>
     </section>

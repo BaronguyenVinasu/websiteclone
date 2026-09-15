@@ -1,12 +1,11 @@
+"use client";
 import { cn } from "@/lib/utils";
+import { AnimateIn } from "@/components/AnimateIn";
 
 const CARDS = [
   { title: "Training Teamwork skill", sub: "Offline in class" },
   { title: "Training Negotiation skill", sub: "Offline + Online" },
-  {
-    title: "Emotional Intelligence in Communication",
-    sub: "Offline in class",
-  },
+  { title: "Emotional Intelligence in Communication", sub: "Offline in class" },
 ];
 
 export function TrainingSection() {
@@ -17,45 +16,39 @@ export function TrainingSection() {
       style={{ background: "rgb(199, 222, 255)" }}
     >
       {/* Header row */}
-      <div className="flex justify-between items-baseline">
+      <AnimateIn type="fade-left" delay={0} className="flex justify-between items-baseline">
         <h2
           className="font-[family-name:var(--font-playfair)] font-normal"
           style={{ fontSize: "clamp(24px, 3vw, 38px)" }}
         >
           Featured Training Programs
         </h2>
-        <a
-          href="#"
-          className="font-[family-name:var(--font-noto)] text-sm underline text-black"
-        >
+        <a href="#" className="font-[family-name:var(--font-noto)] text-sm underline text-black">
           See more
         </a>
-      </div>
+      </AnimateIn>
 
       {/* Cards */}
       <div className="flex gap-6 mt-10">
         {CARDS.map((card, i) => (
-          <div
-            key={i}
-            className={cn(
-              "bg-white rounded-3xl p-10 flex-1 shadow-sm"
-            )}
-          >
-            <h3
-              className="font-[family-name:var(--font-playfair)] leading-tight font-normal"
-              style={{ fontSize: "clamp(20px, 2.5vw, 30px)" }}
-            >
-              {card.title}
-            </h3>
-            <p className="font-[family-name:var(--font-noto)] text-sm text-gray-500 mt-3">
-              {card.sub}
-            </p>
-          </div>
+          <AnimateIn key={i} type="scale-in" delay={200 + i * 150} className="flex-1">
+            <div className={cn("bg-white rounded-3xl p-10 h-full shadow-sm")}>
+              <h3
+                className="font-[family-name:var(--font-playfair)] leading-tight font-normal"
+                style={{ fontSize: "clamp(20px, 2.5vw, 30px)" }}
+              >
+                {card.title}
+              </h3>
+              <p className="font-[family-name:var(--font-noto)] text-sm text-gray-500 mt-3">
+                {card.sub}
+              </p>
+            </div>
+          </AnimateIn>
         ))}
       </div>
 
       {/* Pill button */}
-      <div className="flex justify-center mt-12">
+      <AnimateIn type="fade-up" delay={650} className="flex justify-center mt-12">
         <a
           href="#"
           className={cn(
@@ -66,7 +59,7 @@ export function TrainingSection() {
         >
           How I design a program using Kolb&apos;s Experiential Learning Cycle
         </a>
-      </div>
+      </AnimateIn>
     </section>
   );
 }
