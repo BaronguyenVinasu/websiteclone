@@ -3,10 +3,10 @@ import { cn } from "@/lib/utils";
 import { AnimateIn } from "@/components/AnimateIn";
 
 const PROJECTS = [
-  { title: "Soft skill training series", sub: "for Fresher" },
-  { title: "Developing a Competency Framework", sub: "for Team Leader" },
-  { title: "Promoting Learning Culture", sub: "Within the Organization" },
-  { title: "English Competency Assessment", sub: "for Technical positions" },
+  { title: "Onboarding Training Program", sub: "M_Service (MoMo e-wallet)" },
+  { title: "IT Recruitment & Talent Sourcing", sub: "Manpower Vietnam Group" },
+  { title: "Career Mentoring Program", sub: "25+ Mentees · 856 Hours" },
+  { title: "HR Operations & People Experience", sub: "akaBot, FPT Group" },
 ];
 
 export function KeyProjectsSection() {

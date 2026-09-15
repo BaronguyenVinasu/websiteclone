@@ -34,8 +34,8 @@ export function ProfileSection() {
             }}
           >
             <Image
-              src="/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/97127f0db54183c0879dfd849c04a407.jpg"
-              alt="Giang Bui profile photo"
+              src="/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/nhat_duong_hero.jpg"
+              alt="Nhật Dương profile photo"
               fill
               className="object-cover object-top"
             />
@@ -46,7 +46,7 @@ export function ProfileSection() {
         <div className="flex flex-col gap-8 flex-1">
           {/* Stats row */}
           <div className="flex gap-12">
-            {[["50+", "Training Courses"], ["90+", "Training Hours"], ["5+", "Years Experience"]].map(
+            {[["182+", "Classes Delivered"], ["600+", "Training Hours"], ["5+", "Years Experience"]].map(
               ([num, label], i) => (
                 <AnimateIn key={label} type="fade-up" delay={300 + i * 150}>
                   <div>
@@ -67,7 +67,7 @@ export function ProfileSection() {
                 Hi, I am
               </p>
               <p className="font-[family-name:var(--font-playfair)] font-normal text-black leading-[0.85]" style={{ fontSize: "clamp(60px, 8vw, 110px)" }}>
-                Giang
+                Nhật (Sun)
               </p>
             </div>
           </AnimateIn>
@@ -75,9 +75,10 @@ export function ProfileSection() {
           {/* Description */}
           <AnimateIn type="fade-up" delay={500}>
             <p className="font-[family-name:var(--font-noto)] text-black max-w-prose" style={{ fontSize: "16px", lineHeight: "1.7" }}>
-              A passionate Trainer &amp; Learning and Development Partner with over 5 years of experience
-              designing and delivering impactful training programs. I combine creative thinking with
-              instructional design expertise to craft learning experiences that inspire and transform.
+              A passionate HR professional, MC &amp; Speaker with over 5 years of experience in training &amp; development,
+              recruitment, and career mentoring. Top graduate in Organizational Management (HR specialization) from
+              Hanoi University of Commerce. I combine a people-first mindset with creative facilitation to build
+              learning experiences that inspire and transform.
             </p>
           </AnimateIn>
 
@@ -86,11 +87,11 @@ export function ProfileSection() {
             <div>
               <p className="font-[family-name:var(--font-noto)] font-bold text-black text-lg mb-3">Core Skills</p>
               <ul className="font-[family-name:var(--font-noto)] text-black space-y-1" style={{ fontSize: "15px" }}>
-                <li>• Instructional Design &amp; Curriculum Development</li>
-                <li>• Facilitation &amp; Training Delivery</li>
-                <li>• E-learning Development (Articulate, Rise)</li>
-                <li>• Learning Needs Analysis</li>
-                <li>• Training Evaluation &amp; Impact Measurement</li>
+                <li>• Training Design &amp; Facilitation</li>
+                <li>• Recruitment &amp; Talent Attraction</li>
+                <li>• Career Mentoring &amp; Coaching</li>
+                <li>• HR Business Partner</li>
+                <li>• MC &amp; Public Speaking</li>
               </ul>
             </div>
           </AnimateIn>

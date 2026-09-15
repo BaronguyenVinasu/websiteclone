@@ -9,15 +9,15 @@ const IMAGE_BASE =
 const photos = [
   {
     src: `${IMAGE_BASE}82dcedcb1eaa2cf514567f3d8a2a1bd4.jpg`,
-    alt: "Training session activity",
+    alt: "Speaking & facilitation session",
   },
   {
     src: `${IMAGE_BASE}b501c9231f1b630fa055e4f0f1fd9bc4.jpg`,
-    alt: "Training session activity",
+    alt: "Career mentoring workshop",
   },
   {
-    src: `${IMAGE_BASE}97127f0db54183c0879dfd849c04a407.jpg`,
-    alt: "Profile photo",
+    src: `${IMAGE_BASE}nhat_duong_hero.jpg`,
+    alt: "Nhật Dương at event",
   },
 ];
 
@@ -47,6 +47,15 @@ export function OtherActivitiesSection() {
         >
           See more
         </button>
+      </div>
+
+      {/* Activities highlights */}
+      <div className="mb-8">
+        <AnimateIn type="fade-up" delay={100}>
+          <p className="font-[family-name:var(--font-noto)] text-black text-sm leading-relaxed max-w-3xl">
+            Co-founder &amp; Mentor at <strong>Lean In Vietnam Graduate</strong> · Youth Ambassador at <strong>Global Goals Youth Summit (Malaysia 2023)</strong> · Media Ambassador for <strong>TEDx VNUIS</strong> · MB Bank Recruitment Brand Ambassador Gen 2 · Co-founder of <strong>Emotouch</strong> (CSDS &amp; Irish Embassy) · MUN Delegate at Singapore, Malaysia &amp; Global conferences
+          </p>
+        </AnimateIn>
       </div>
 
       {/* 3-column photo grid */}

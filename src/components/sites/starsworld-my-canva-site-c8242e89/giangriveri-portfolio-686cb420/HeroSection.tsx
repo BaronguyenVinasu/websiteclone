@@ -20,7 +20,7 @@ export function HeroSection() {
             className="font-[family-name:var(--font-playfair)] uppercase text-black tracking-[3px]"
             style={{ fontSize: "13px" }}
           >
-            APPROACHING L&amp;D WITH CREATIVE MIND
+            APPROACHING HR WITH CREATIVE MIND
           </span>
         </AnimateIn>
       </div>
@@ -41,7 +41,7 @@ export function HeroSection() {
                 className="font-[family-name:var(--font-playfair)] italic font-bold"
                 style={{ fontSize: "clamp(22px, 3.5vw, 51px)", color: "rgb(211,110,99)" }}
               >
-                Trainer &amp; L&amp;D Partner
+                HR · MC · Speaker
               </p>
             </AnimateIn>
             <AnimateIn type="fade-up" delay={650}>
@@ -49,7 +49,7 @@ export function HeroSection() {
                 className="font-[family-name:var(--font-playfair)] font-normal text-black leading-[0.85]"
                 style={{ fontSize: "clamp(80px, 13vw, 180px)" }}
               >
-                Giang Bui
+                Nhật Dương
               </h1>
             </AnimateIn>
           </div>
@@ -57,8 +57,8 @@ export function HeroSection() {
           {/* Photo — right side */}
           <AnimateIn type="fade-in" delay={400} className="absolute right-0 bottom-0 h-full w-[55%]">
             <Image
-              src="/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/6c24ae6fc72cf5d7de7aecf4ed65ea1e.png"
-              alt="Giang Bui"
+              src="/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/nhat_duong_hero.jpg"
+              alt="Nhật Dương"
               fill
               className="object-cover object-top"
               priority

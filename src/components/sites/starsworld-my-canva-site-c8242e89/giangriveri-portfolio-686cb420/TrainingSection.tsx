@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 import { AnimateIn } from "@/components/AnimateIn";
 
 const CARDS = [
-  { title: "Training Teamwork skill", sub: "Offline in class" },
-  { title: "Training Negotiation skill", sub: "Offline + Online" },
-  { title: "Emotional Intelligence in Communication", sub: "Offline in class" },
+  { title: "Mock Interview & CV Review", sub: "Career mentoring workshops" },
+  { title: "Personal Branding for Students", sub: "University tour speaker" },
+  { title: "Communication & Leadership Skills", sub: "Youth organizations & corporates" },
 ];
 
 export function TrainingSection() {
@@ -21,7 +21,7 @@ export function TrainingSection() {
           className="font-[family-name:var(--font-playfair)] font-normal"
           style={{ fontSize: "clamp(24px, 3vw, 38px)" }}
         >
-          Featured Training Programs
+          Featured Speaking & Training
         </h2>
         <a href="#" className="font-[family-name:var(--font-noto)] text-sm underline text-black">
           See more
@@ -57,7 +57,7 @@ export function TrainingSection() {
             "hover:bg-black hover:text-white transition-colors"
           )}
         >
-          How I design a program using Kolb&apos;s Experiential Learning Cycle
+          How I design a mentoring program for career success
         </a>
       </AnimateIn>
     </section>

@@ -1,5 +1,8 @@
 "use client";
+import Image from "next/image";
 import { AnimateIn } from "@/components/AnimateIn";
+
+const IMAGE_BASE = "/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/";
 
 export function KnowMeSection() {
   return (
@@ -8,14 +11,14 @@ export function KnowMeSection() {
       className="min-h-screen flex items-center px-12 gap-12"
       style={{ backgroundColor: "rgb(250,217,180)" }}
     >
-      {/* Left: video */}
+      {/* Left: photo */}
       <AnimateIn type="fade-right" delay={0} className="flex-1 max-w-[60%]">
-        <div className="rounded-3xl border-4 border-black bg-black overflow-hidden">
-          <video
-            src="/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/videos/8ded250fc74d0748c68f4bf427fc510b.mp4"
-            poster="/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/ec8f53e05757922416796cc73f347a3c.jpg"
-            controls
-            className="w-full aspect-video"
+        <div className="rounded-3xl overflow-hidden relative" style={{ aspectRatio: "16/10" }}>
+          <Image
+            src={`${IMAGE_BASE}nhat_duong_hero.jpg`}
+            alt="Nhật Dương"
+            fill
+            className="object-cover object-top"
           />
         </div>
       </AnimateIn>
@@ -33,14 +36,14 @@ export function KnowMeSection() {
         <div className="flex gap-10 mt-8">
           <AnimateIn type="fade-up" delay={300}>
             <div>
-              <p className="font-[family-name:var(--font-noto)] font-bold text-black" style={{ fontSize: "60px" }}>50+</p>
-              <p className="font-[family-name:var(--font-noto)] text-black text-lg">Training Courses</p>
+              <p className="font-[family-name:var(--font-noto)] font-bold text-black" style={{ fontSize: "60px" }}>182+</p>
+              <p className="font-[family-name:var(--font-noto)] text-black text-lg">Classes Delivered</p>
             </div>
           </AnimateIn>
           <AnimateIn type="fade-up" delay={450}>
             <div>
-              <p className="font-[family-name:var(--font-noto)] font-bold text-black" style={{ fontSize: "60px" }}>90+</p>
-              <p className="font-[family-name:var(--font-noto)] text-black text-lg">Training Hours</p>
+              <p className="font-[family-name:var(--font-noto)] font-bold text-black" style={{ fontSize: "60px" }}>4.5/5</p>
+              <p className="font-[family-name:var(--font-noto)] text-black text-lg">Average NPS</p>
             </div>
           </AnimateIn>
         </div>

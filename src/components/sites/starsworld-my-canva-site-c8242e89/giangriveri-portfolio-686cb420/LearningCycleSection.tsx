@@ -6,10 +6,10 @@ import { AnimateIn } from "@/components/AnimateIn";
 const BASE = "/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images";
 
 const DIAMONDS = [
-  { label: "Concrete Experience", desc: "learners use their own experience to solve a teamwork problem", dark: false },
-  { label: "Reflective Observation", desc: "discussion in team, define what works and doesn't work in solving the case", dark: false },
-  { label: "Abstract Conceptualization", desc: "suggest new teamwork models to modify the current problem", dark: true },
-  { label: "Active Experimentation", desc: "Testing the models by applying in solving a new case, role play activity", dark: true },
+  { label: "Needs Assessment", desc: "Identify the learner's current situation, gaps, and career goals through 1-1 conversation", dark: false },
+  { label: "Program Design", desc: "Co-create a personalized learning roadmap tailored to skills, timeline, and opportunities", dark: false },
+  { label: "Delivery & Facilitation", desc: "Run interactive workshops, coaching sessions, and mock interviews with real-world cases", dark: true },
+  { label: "Evaluation & Follow-up", desc: "Measure impact through NPS feedback, goal tracking, and continuous mentoring support", dark: true },
 ];
 
 const PHOTOS = [
@@ -42,12 +42,12 @@ export function LearningCycleSection() {
     <section id="learning-cycle" className="min-h-screen bg-white flex flex-col px-12 py-16">
       <AnimateIn type="fade-in" delay={0}>
         <p className="font-[family-name:var(--font-noto)] text-sm text-gray-500 mb-1">
-          Start with Concrete Experience
+          Start with Needs Assessment
         </p>
       </AnimateIn>
       <AnimateIn type="fade-in" delay={100}>
         <p className="font-[family-name:var(--font-noto)] text-base font-medium mb-10">
-          How I design a program using Kolb&apos;s Experiential Learning Cycle
+          How I design a mentoring & training program for career success
         </p>
       </AnimateIn>
 

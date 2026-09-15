@@ -8,10 +8,10 @@ const IMAGE_BASE =
 
 const siteMapLinks = [
   "Key Projects",
-  "Featured Training Programs",
-  "E-learning creation",
-  "Certifications & Recognitions",
-  "Other activities",
+  "Featured Speaking & Training",
+  "Tools & Platforms",
+  "Awards & Scholarships",
+  "Other Activities",
 ];
 
 interface ContactIconProps {
@@ -47,7 +47,7 @@ export function ContactSection() {
             fontSize: "clamp(16px, 2vw, 26px)",
           }}
         >
-          Do not hesitate to contact me to for any collaboration requests.
+          Do not hesitate to contact me for any collaboration, speaking, or mentoring requests.
         </p>
       </AnimateIn>
 
@@ -58,17 +58,17 @@ export function ContactSection() {
           <div className="flex flex-col">
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
               <Image
-                src={`${IMAGE_BASE}97127f0db54183c0879dfd849c04a407.jpg`}
-                alt="Giang Bui (Riveri)"
+                src={`${IMAGE_BASE}nhat_duong_hero.jpg`}
+                alt="Dương Thị Nhật (Sun)"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
             <p
               className="text-base mt-3 text-black"
               style={{ fontFamily: "var(--font-noto)" }}
             >
-              Giang Bui (Riveri) - L&D
+              Dương Thị Nhật (Sun) - HR · MC · Speaker
             </p>
           </div>
         </AnimateIn>
@@ -118,14 +118,14 @@ export function ContactSection() {
               LET&apos;S CONNECT!
             </button>
 
-            {/* Phone */}
+            {/* LinkedIn */}
             <div className="flex items-center gap-3 mb-4">
-              <ContactIcon label="Ph" />
+              <ContactIcon label="in" />
               <span
                 className="text-base text-black"
                 style={{ fontFamily: "var(--font-noto)" }}
               >
-                0969213298
+                Dương Thị Nhật
               </span>
             </div>
 
@@ -136,18 +136,18 @@ export function ContactSection() {
                 className="text-base text-black"
                 style={{ fontFamily: "var(--font-noto)" }}
               >
-                bhuonggiang98@gmail.com
+                duongnhat.hr@gmail.com
               </span>
             </div>
 
-            {/* LinkedIn */}
+            {/* Role tag */}
             <div className="flex items-center gap-3 mb-4">
-              <ContactIcon label="in" />
+              <ContactIcon label="HR" />
               <span
                 className="text-base text-black"
                 style={{ fontFamily: "var(--font-noto)" }}
               >
-                in/riveri-giangbui
+                HR Business Partner · Trainer · MC
               </span>
             </div>
           </div>
@@ -160,7 +160,7 @@ export function ContactSection() {
           className="text-sm text-gray-500"
           style={{ fontFamily: "var(--font-noto)" }}
         >
-          &copy; 2025 by Giang Bui
+          &copy; 2026 by Dương Thị Nhật
         </p>
       </AnimateIn>
 

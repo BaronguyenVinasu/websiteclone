@@ -43,15 +43,16 @@ function CertItem({ number, title, bullets }: CertItemProps) {
 }
 
 export function CertificationsSection() {
-  const certificationBullets = [
-    "L&D Business Partner",
-    "Learning Activities Design",
-    "Adult Learning Theory, etc...",
+  const awardBullets = [
+    "Top 7 — HR Sandbox Competition (The F.O.I)",
+    "Top 10 — Leadership Talent Program 2020",
+    "Top 5 — SUNWAH-GYLN Environment Ambassador 2019",
   ];
 
-  const recognitionBullets = [
-    "Shining star of 2023 (Rookie award)",
-    "Excellent Star 2024",
+  const scholarshipBullets = [
+    "ABG Open 08 Leadership Institute",
+    "YSEALI Younified 2020 (U.S. Embassy grant)",
+    "Lead The Change 2019, Singapore (28% grant)",
   ];
 
   return (
@@ -71,7 +72,7 @@ export function CertificationsSection() {
             lineHeight: "0.9",
           }}
         >
-          {"Certifications &\nRecognitions"}
+          {"Awards &\nScholarships"}
         </h2>
       </AnimateIn>
 
@@ -81,13 +82,13 @@ export function CertificationsSection() {
           <div className="bg-white rounded-3xl p-10 shadow-sm" style={{ width: "clamp(240px, 38vw, 460px)" }}>
             <CertItem
               number="01"
-              title="Certification"
-              bullets={certificationBullets}
+              title="Competition Awards"
+              bullets={awardBullets}
             />
             <CertItem
               number="02"
-              title="Recognition"
-              bullets={recognitionBullets}
+              title="Scholarships"
+              bullets={scholarshipBullets}
             />
           </div>
         </AnimateIn>
@@ -97,7 +98,7 @@ export function CertificationsSection() {
           <AnimateIn type="scale-in" delay={350} className="absolute top-8 left-0">
             <Image
               src={`${IMAGE_BASE}875630dfd8cee5a8052f3e974bcc7f12.png`}
-              alt="Certification document"
+              alt="Award certificate"
               width={600}
               height={450}
               className={cn("rounded-lg shadow-xl object-cover -rotate-[5deg]")}
@@ -107,7 +108,7 @@ export function CertificationsSection() {
           <AnimateIn type="scale-in" delay={500} className="absolute top-16 right-0">
             <Image
               src={`${IMAGE_BASE}fd0697800d55617d63cfff99189564e4.jpg`}
-              alt="Recognition certificate"
+              alt="Scholarship recognition"
               width={500}
               height={375}
               className={cn("rounded-lg shadow-lg object-cover rotate-[3deg]")}

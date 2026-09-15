@@ -6,9 +6,9 @@ import { AnimateIn } from "@/components/AnimateIn";
 const IMAGE_BASE = "/sites/starsworld-my-canva-site-c8242e89/giangriveri-portfolio-686cb420/images/";
 
 const TOOLS = [
-  { number: "01", title: "E-learning", toolName: "Articulate, Animaker", description: "Video editing, interactive learning" },
-  { number: "02", title: "LMS", toolName: "talentLMS", description: "Self-study data management on LMS" },
-  { number: "03", title: "Design", toolName: "Canva/ Capcut for video", description: "Design L&D Intranet, newsletter,..." },
+  { number: "01", title: "Training & Presentation", toolName: "PowerPoint, Canva, Google Slides", description: "Designing training materials, slides & visual content" },
+  { number: "02", title: "HR & Recruitment Tech", toolName: "LinkedIn Recruiter, Excel, ATS", description: "Talent sourcing, screening & HR data management" },
+  { number: "03", title: "Online Delivery", toolName: "Zoom, Google Meet, LMS platforms", description: "Virtual facilitation, online coaching & e-learning" },
 ];
 
 export function ElearningSection() {
@@ -23,7 +23,7 @@ export function ElearningSection() {
           className={cn("font-normal text-black mb-10")}
           style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(40px, 6vw, 80px)" }}
         >
-          E-learning and Design Tools
+          Tools & Platforms I Use
         </h2>
       </AnimateIn>
 
@@ -54,7 +54,7 @@ export function ElearningSection() {
         <AnimateIn type="scale-in" delay={350} className="flex-1 flex items-center justify-center">
           <Image
             src={`${IMAGE_BASE}875630dfd8cee5a8052f3e974bcc7f12.png`}
-            alt="E-learning mockup screenshot"
+            alt="Tools and platforms"
             width={800}
             height={600}
             className="w-full object-contain"
